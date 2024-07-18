@@ -41,6 +41,8 @@ The `pdf_strip_metadata.py` script removes all metadata from PDF files in a spec
     python3 pdf_strip_metadata.py
     ```
 
+3. Profit.  Look for your squeaky clean PDFs in the output_pdf directory.
+
 ## License
 
 This project is licensed under the unlicense.  Feel free to use it, share it, do whatever you want with it but keep in mind the following:
