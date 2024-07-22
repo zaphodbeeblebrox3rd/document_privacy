@@ -52,9 +52,15 @@ if not os.path.exists(directory_path):
     # create the directory_path
     os.makedirs(directory_path, exist_ok=True)
 
+# Identify whether the output_directory exists
+if not os.path.exists(output_directory):
+    print(f"Directory {output_directory} does not exist.  Creating it now.")
+    # create the output_directory
+    os.makedirs(output_directory, exist_ok=True)
+
 # Identify whether there are any PDF files in the directory_path
 if not os.listdir(directory_path):
     print(f"Directory {directory_path} does not contain any PDF files.  Please put some PDF files in this directory and try again.")
 else:
-    #launch the strip_metadata_from_directory function
+    #launch the strip_metadata_from_directory function if any pdf files are present
     strip_metadata_from_directory(directory_path, output_directory)
